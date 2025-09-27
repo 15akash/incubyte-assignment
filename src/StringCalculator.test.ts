@@ -51,7 +51,7 @@ describe('StringCalculator', () => {
     expect(() => calculator.add('-1,2')).toThrow('negative numbers not allowed -1');
     expect(() => calculator.add('1,-2')).toThrow('negative numbers not allowed -2');
     expect(() => calculator.add('abc-5def2')).toThrow('negative numbers not allowed -5');
-  });
+  }); 
 
   it('should throw exception with all negative numbers', () => {
     expect(() => calculator.add('-1,-2,3')).toThrow('negative numbers not allowed -1,-2');
